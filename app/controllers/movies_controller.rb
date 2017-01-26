@@ -29,9 +29,9 @@ class MoviesController < ApplicationController
  def edit
   id = params['id']
   @movie = Movie.find id
-  #  rescue ActiveRecord::RecordNotFound
-  #@movie = nil
-  #  render file: "#{Rails.root}/public/404.html", status: 404
+    rescue ActiveRecord::RecordNotFound
+    @movie = nil
+    render file: "#{Rails.root}/public/404.html", status: 404
   end
 
 
@@ -44,9 +44,9 @@ class MoviesController < ApplicationController
     else
       render :edit, id: @movie.id
     end
-    # rescue ActiveRecord::RecordNotFound
-    # @movie = nil
-    # render file: "#{Rails.root}/public/404.html", status: 404
+     rescue ActiveRecord::RecordNotFound
+     @movie = nil
+     render file: "#{Rails.root}/public/404.html", status: 404
   end
 
 
