@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :actors
   get 'movies' => "movies#index"
 
   get 'movies/index'
