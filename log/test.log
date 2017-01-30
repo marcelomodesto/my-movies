@@ -1,0 +1,155 @@
+  [1m[35m (98.4ms)[0m  [1m[35mCREATE TABLE "actors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birthdate" datetime, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (115.0ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "release_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "director_id" integer)[0m
+  [1m[35m (52.8ms)[0m  [1m[35mCREATE TABLE "professionals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "birthdate" datetime, "gender" varchar, "country" varchar, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (133.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (82.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170127231747')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (52.9ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170124223339'),
+('20170127213539'),
+('20170124234044');
+
+[0m
+  [1m[35m (52.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", 2017-01-30 21:15:21 UTC], ["updated_at", 2017-01-30 21:15:21 UTC]]
+  [1m[35m (89.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (3.1ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (1.7ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:21.842417', '2017-01-30 21:15:21.842417', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:21.842417', '2017-01-30 21:15:21.842417', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:21.854234', '2017-01-30 21:15:21.854234', 980190962)[0m
+  [1m[35m (39.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (13.2ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.117690', '2017-01-30 21:15:22.117690', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.117690', '2017-01-30 21:15:22.117690', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.135150', '2017-01-30 21:15:22.135150', 980190962)[0m
+  [1m[35m (24.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (9.2ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.162525', '2017-01-30 21:15:22.162525', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.162525', '2017-01-30 21:15:22.162525', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.175456', '2017-01-30 21:15:22.175456', 980190962)[0m
+  [1m[35m (27.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (24.8ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.206652', '2017-01-30 21:15:22.206652', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.206652', '2017-01-30 21:15:22.206652', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.236055', '2017-01-30 21:15:22.236055', 980190962)[0m
+  [1m[35m (8.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (4.8ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.247806', '2017-01-30 21:15:22.247806', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.247806', '2017-01-30 21:15:22.247806', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.256910', '2017-01-30 21:15:22.256910', 980190962)[0m
+  [1m[35m (20.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (19.3ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.281521', '2017-01-30 21:15:22.281521', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.281521', '2017-01-30 21:15:22.281521', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.305650', '2017-01-30 21:15:22.305650', 980190962)[0m
+  [1m[35m (44.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (30.5ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.354200', '2017-01-30 21:15:22.354200', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.354200', '2017-01-30 21:15:22.354200', 298486374)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.391142', '2017-01-30 21:15:22.391142', 980190962)[0m
+  [1m[35m (63.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (79.0ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.461939', '2017-01-30 21:15:22.461939', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.461939', '2017-01-30 21:15:22.461939', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.548232', '2017-01-30 21:15:22.548232', 980190962)[0m
+  [1m[35m (26.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (25.6ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.581922', '2017-01-30 21:15:22.581922', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.581922', '2017-01-30 21:15:22.581922', 298486374)[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.613551', '2017-01-30 21:15:22.613551', 980190962)[0m
+  [1m[35m (19.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (7.7ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.637798', '2017-01-30 21:15:22.637798', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.637798', '2017-01-30 21:15:22.637798', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.650609', '2017-01-30 21:15:22.650609', 980190962)[0m
+  [1m[35m (19.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (2.3ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.674266', '2017-01-30 21:15:22.674266', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.674266', '2017-01-30 21:15:22.674266', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:22.681878', '2017-01-30 21:15:22.681878', 980190962)[0m
+  [1m[35m (24.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (19.0ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (1.6ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.650934', '2017-01-30 21:15:44.650934', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.650934', '2017-01-30 21:15:44.650934', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.677882', '2017-01-30 21:15:44.677882', 980190962)[0m
+  [1m[35m (29.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (3.5ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.869623', '2017-01-30 21:15:44.869623', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.869623', '2017-01-30 21:15:44.869623', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.878032', '2017-01-30 21:15:44.878032', 980190962)[0m
+  [1m[35m (16.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (2.0ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.897337', '2017-01-30 21:15:44.897337', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.897337', '2017-01-30 21:15:44.897337', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.903760', '2017-01-30 21:15:44.903760', 980190962)[0m
+  [1m[35m (18.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.6ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.925835', '2017-01-30 21:15:44.925835', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.925835', '2017-01-30 21:15:44.925835', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.932161', '2017-01-30 21:15:44.932161', 980190962)[0m
+  [1m[35m (18.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.6ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.953937', '2017-01-30 21:15:44.953937', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.953937', '2017-01-30 21:15:44.953937', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.959706', '2017-01-30 21:15:44.959706', 980190962)[0m
+  [1m[35m (24.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (6.7ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.988516', '2017-01-30 21:15:44.988516', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:44.988516', '2017-01-30 21:15:44.988516', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.000157', '2017-01-30 21:15:45.000157', 980190962)[0m
+  [1m[35m (8.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (7.8ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.012444', '2017-01-30 21:15:45.012444', 980190962)[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.012444', '2017-01-30 21:15:45.012444', 298486374)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.026183', '2017-01-30 21:15:45.026183', 980190962)[0m
+  [1m[35m (33.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (4.0ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.065235', '2017-01-30 21:15:45.065235', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.065235', '2017-01-30 21:15:45.065235', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.074950', '2017-01-30 21:15:45.074950', 980190962)[0m
+  [1m[35m (31.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (10.1ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.111120', '2017-01-30 21:15:45.111120', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.111120', '2017-01-30 21:15:45.111120', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.126629', '2017-01-30 21:15:45.126629', 980190962)[0m
+  [1m[35m (28.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (35.4ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.159842', '2017-01-30 21:15:45.159842', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.159842', '2017-01-30 21:15:45.159842', 298486374)[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.201810', '2017-01-30 21:15:45.201810', 980190962)[0m
+  [1m[35m (13.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (15.3ms)[0m  [1m[31mDELETE FROM "professionals"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.220960', '2017-01-30 21:15:45.220960', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-24 21:40:44', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.220960', '2017-01-30 21:15:45.220960', 298486374)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "professionals" ("name", "birthdate", "gender", "country", "type", "created_at", "updated_at", "id") VALUES ('MyString', '2017-01-27 19:38:03', 'MyString', 'MyString', NULL, '2017-01-30 21:15:45.241748', '2017-01-30 21:15:45.241748', 980190962)[0m
+  [1m[35m (15.3ms)[0m  [1m[31mrollback transaction[0m
