@@ -2000,3 +2000,600 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 917ms (Views: 913.1ms | ActiveRecord: 3.3ms)
 
 
+Started GET "/movies/1" for ::1 at 2017-01-30 19:32:39 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (12.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 309ms (Views: 292.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:32:40 -0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:32:40 -0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:32:48 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (11.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 231ms (Views: 217.4ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/movies/2" for ::1 at 2017-01-30 19:32:50 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (8.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 202ms (Views: 190.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:32:52 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (13.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 249ms (Views: 233.0ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/movies/new" for ::1 at 2017-01-30 19:33:00 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+Started GET "/movies/new" for ::1 at 2017-01-30 19:34:33 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+Started GET "/movies/new" for ::1 at 2017-01-30 19:34:36 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.6ms)
+Started GET "/movies/new" for ::1 at 2017-01-30 19:34:40 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.2ms)
+Started GET "/movies/new/8" for ::1 at 2017-01-30 19:34:43 -0200
+  
+ActionController::RoutingError (No route matches [GET] "/movies/new/8"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [15 times] (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.6ms)
+Started GET "/movies/new" for ::1 at 2017-01-30 19:34:47 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.2ms)
+Started GET "/movies/new" for ::1 at 2017-01-30 19:35:51 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+Started GET "/movies/new" for ::1 at 2017-01-30 19:35:53 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : { method: 'post', action: 'c...
+...                               ^):
+  
+app/views/movies/new.html.erb:3: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.5ms)
+Started GET "/movies/edit/2" for ::1 at 2017-01-30 19:36:57 -0200
+  
+ActionController::RoutingError (No route matches [GET] "/movies/edit/2"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [15 times] (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.8ms)
+Started GET "/movies/edit/3" for ::1 at 2017-01-30 19:37:01 -0200
+  
+ActionController::RoutingError (No route matches [GET] "/movies/edit/3"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [15 times] (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.2ms)
+Started GET "/movies/edit/7" for ::1 at 2017-01-30 19:37:03 -0200
+  
+ActionController::RoutingError (No route matches [GET] "/movies/edit/7"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [15 times] (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.7ms)
+Started GET "/movies/7/edit" for ::1 at 2017-01-30 19:37:08 -0200
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (3.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/edit.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.6ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:5: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : {method: 'put', action: 'upd...
+...                               ^):
+  
+app/views/movies/edit.html.erb:5: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.6ms)
+Started GET "/movies/7/" for ::1 at 2017-01-30 19:37:13 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (4.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 60.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:37:15 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (3.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 135ms (Views: 128.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/movies/3" for ::1 at 2017-01-30 19:37:16 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMovie Load (5.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 237ms (Views: 230.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:37:18 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (5.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 127ms (Views: 119.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/movies/1" for ::1 at 2017-01-30 19:37:19 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (4.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 183ms (Views: 176.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:37:20 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (5.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 163ms (Views: 156.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/movies/8" for ::1 at 2017-01-30 19:37:22 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMovie Load (7.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 213ms (Views: 204.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:37:23 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (5.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 107ms (Views: 100.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/movies/2" for ::1 at 2017-01-30 19:37:25 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (4.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 213ms (Views: 199.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/movies/2/edit" for ::1 at 2017-01-30 19:37:29 -0200
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (32.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/edit.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 32.4ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:5: syntax error, unexpected ':', expecting =>
+...ender partial: 'form', locals : {method: 'put', action: 'upd...
+...                               ^):
+  
+app/views/movies/edit.html.erb:5: syntax error, unexpected ':', expecting =>
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+Started GET "/movies/2/edit" for ::1 at 2017-01-30 19:40:06 -0200
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (7.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/edit.html.erb within layouts/application (64.3ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 7.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `locals' for #<#<Class:0x007fccb00de538>:0x00000004e26cc0>
+Did you mean?  locale
+               locale=):
+    2:   Edit movie <%= @movie.title %>
+    3: </h1>
+    4: 
+    5: <%= render partial: 'form', locals => {method: 'put', action: 'update' } %>
+  
+app/views/movies/edit.html.erb:5:in `_app_views_movies_edit_html_erb___4087410250969525271_40988880'
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.3ms)
+Started GET "/movies/2/edit" for ::1 at 2017-01-30 19:40:16 -0200
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (4.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/edit.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 4.5ms)
+
+
+  
+SyntaxError (/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:5: syntax error, unexpected ':', expecting '}'
+...partial: 'form', locals{method: 'put', action: 'update' } );...
+...                               ^
+/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:5: syntax error, unexpected ',', expecting '}'
+...: 'form', locals{method: 'put', action: 'update' } );@output...
+...                               ^
+/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:5: syntax error, unexpected ')', expecting =>
+...od: 'put', action: 'update' } );@output_buffer.safe_append='
+...                               ^
+/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:7: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ruby.05/workspace/my_movies/app/views/movies/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/movies/edit.html.erb:5: syntax error, unexpected ':', expecting '}'
+app/views/movies/edit.html.erb:5: syntax error, unexpected ',', expecting '}'
+app/views/movies/edit.html.erb:5: syntax error, unexpected ')', expecting =>
+app/views/movies/edit.html.erb:7: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/movies/edit.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.7ms)
+Started GET "/movies/2/edit" for ::1 at 2017-01-30 19:40:25 -0200
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (4.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/_form.html.erb (82.7ms)
+  Rendered movies/edit.html.erb within layouts/application (95.7ms)
+Completed 200 OK in 224ms (Views: 217.0ms | ActiveRecord: 4.6ms)
+
+
+Started PUT "/movies/2" for ::1 at 2017-01-30 19:40:50 -0200
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xFqYn4LhCoOh6aOH9fvOjtmI73hGpOkvK5MwuR5ccOtly8LlftFoekHKhC4gxeT6x7whV5vKRzXuWXhxD+bP0A==", "movie"=>{"title"=>"When Harry Met Sally", "release_date(3i)"=>"21", "release_date(2i)"=>"7", "release_date(1i)"=>"1989", "description"=>"When Harry Met Sally é um fimle emocionante!"}, "commit"=>"Update Movie", "id"=>"2"}
+  [1m[36mMovie Load (4.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/_form.html.erb (11.6ms)
+  Rendered movies/edit.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 92ms (Views: 81.1ms | ActiveRecord: 4.3ms)
+
+
+Started PUT "/movies/2" for ::1 at 2017-01-30 19:40:54 -0200
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hVCaaB9b/4FVd5O3avHVjs+Cv/g0yEOpJuAZd7B1K+wkwcAS42udeLVUtB6/z//60bZx1+mm7bPjKlG/oc+U1w==", "movie"=>{"title"=>"When Harry Met Sally", "release_date(3i)"=>"21", "release_date(2i)"=>"7", "release_date(1i)"=>"1989", "description"=>"When Harry Met Sally é um fimle emocionante!"}, "commit"=>"Update Movie", "id"=>"2"}
+  [1m[36mMovie Load (3.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/_form.html.erb (3.1ms)
+  Rendered movies/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/movies" for ::1 at 2017-01-30 19:41:05 -0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (4.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 126ms (Views: 119.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/movies/4" for ::1 at 2017-01-30 19:41:07 -0200
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (4.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 230ms (Views: 224.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/movies/new" for ::1 at 2017-01-30 19:41:11 -0200
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (3.2ms)
+  Rendered movies/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 209ms (Views: 207.3ms | ActiveRecord: 0.0ms)
+
+
